@@ -1,7 +1,7 @@
 {
   "sounds": [
     {
-      "label": "Bomahaha",
+      "label": "Alles kits achter de rits",
       "url": "../assets/sounds/bomahaha.mp3"
     },
     {
@@ -9,20 +9,73 @@
       "url": "../assets/sounds/bomalach2.mp3"
     },
     {
-      "label": "Bomaspijt",
+      "label": "Spijt van krijgen",
       "url": "../assets/sounds/bomaspijt.mp3"
     },
     {
-      "label": "Bomazandloper",
+      "label": "Zandloper",
       "url": "../assets/sounds/bomazandloper.mp3"
     },
     {
-      "label": "De lach van Bomahaha",
-      "url": "../assets/sounds/de-lach-van-bomahaha.mp3"
+      "label": "Lach",
+      "url": "../assets/sounds/de-lach-van-meneer-boma-kort.mp3"
+    },
+    {
+      "label": "Mijn gedacht",
+      "url": "../assets/sounds/mijn-gedacht.mp3",
+			"image":   "../assets/images/buttons/mijn-gedacht.png"
+    },
+    {
+      "label": "A whole bottle of champagne",
+      "url": "../assets/sounds/bottle-champagne.mp3",
+      "image": "../assets/images/buttons/bottle-champagne.jpg"
+    },
+    {
+      "label": "Everybody merry",
+      "url": "../assets/sounds/everybody-merry.mp3"
     },
 		{
-      "label": "Mijn gedacht",
-      "url": "../assets/sounds/mijn-gedacht.mp3"
-    }
+      "label": "Day Shuttle",
+      "url": "../assets/sounds/day-shuttle.mp3"
+    },
+		{
+      "label": "For us allemaal",
+      "url": "../assets/sounds/for-us-allemaal.mp3",
+			"image": "../assets/images/buttons/for-us-allemaal.png"
+    },
+		{
+			"label": "From tap",
+			"url": "../assets/sounds/from-tap.mp3",
+			"image": "../assets/images/buttons/from-tap.png"
+		},
+		{
+      "label": "Mijn gedacht 2",
+      "url": "../assets/sounds/mijn-gedacht-2.mp3",
+			"image": "../assets/images/buttons/mijn-gedacht.png"
+    },
+		{
+			"label": "Naaispecialist",
+			"url": "../assets/sounds/naaispecialist.mp3",
+			"image": "../assets/images/buttons/naaispecialist.png"
+		},
+		{
+			"label": "stemrecht",
+			"url": "../assets/sounds/stemrecht.mp3"
+		},
+		{
+			"label": "Poepke chez moi",
+			"url": "../assets/sounds/poepeke-chez-moi.mp3",
+			"image": "../assets/images/buttons/poepeke-chez-moi.png"
+		},
+		{
+			"label": "Van hilde",
+			"url": "../assets/sounds/Van-hilde.mp3",
+			"image": "../assets/images/buttons/van-hilde.png"
+		},
+		{
+			"label": "Zijde gij niet",
+			"url": "../assets/sounds/zijde-gij-niet.mp3",
+			"image": "../assets/images/buttons/van-hilde.png"
+		}
   ]
 }

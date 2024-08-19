@@ -128,6 +128,7 @@ h1, h2, h3, h4, h5, h6, .soundboard__button{
   min-width: 200px;
   min-height: 200px;
   font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
 .soundboard__button:hover {
@@ -141,7 +142,7 @@ h1, h2, h3, h4, h5, h6, .soundboard__button{
 }
 
 .page--dark .soundboard__button {
-  border: 1px solid #555;
+  /* border: 1px solid #555; */
 }
 
 

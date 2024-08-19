@@ -9,13 +9,15 @@ fetch('./js/sounds.json')
         data.sounds.forEach(sound => {
             const button = document.createElement('button');
             button.className = 'soundboard__button';
-            if(sound.background !== undefined)
+           console.log(sound);
+            if(sound.image !== undefined)
             {
-                button.style.backgroundImage = `url(${sound.background})`;
+                button.style.backgroundImage = `url(${sound.image})`;
             }
             else
             {
-                button.style.backgroundImage = `url('../assets/images/background/fallback_background.jpg')`;
+                button.style.backgroundImage = `url('./assets/images/buttons/fallback_background.jpg')`;
+
             }
             button.textContent = sound.label;
 
