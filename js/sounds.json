@@ -1,9 +1,28 @@
 {
-	"sounds": [
-			{
-					"label": "Bomahaha",
-					"url": "../assets/sounds/bomahaha.mp3",
-					"background": "../assets/images/bg1.jpg"
-			}
-	]
+  "sounds": [
+    {
+      "label": "Bomahaha",
+      "url": "../assets/sounds/bomahaha.mp3"
+    },
+    {
+      "label": "Bomalach",
+      "url": "../assets/sounds/bomalach2.mp3"
+    },
+    {
+      "label": "Bomaspijt",
+      "url": "../assets/sounds/bomaspijt.mp3"
+    },
+    {
+      "label": "Bomazandloper",
+      "url": "../assets/sounds/bomazandloper.mp3"
+    },
+    {
+      "label": "De lach van Bomahaha",
+      "url": "../assets/sounds/de-lach-van-bomahaha.mp3"
+    },
+		{
+      "label": "Mijn gedacht",
+      "url": "../assets/sounds/mijn-gedacht.mp3"
+    }
+  ]
 }

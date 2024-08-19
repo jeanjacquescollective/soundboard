@@ -9,7 +9,14 @@ fetch('./js/sounds.json')
         data.sounds.forEach(sound => {
             const button = document.createElement('button');
             button.className = 'soundboard__button';
-            button.style.backgroundImage = `url(${sound.background})` || '../assets/images/fallback_background.jpg';
+            if(sound.background !== undefined)
+            {
+                button.style.backgroundImage = `url(${sound.background})`;
+            }
+            else
+            {
+                button.style.backgroundImage = `url('../assets/images/background/fallback_background.jpg')`;
+            }
             button.textContent = sound.label;
 
             button.addEventListener('click', () => {
