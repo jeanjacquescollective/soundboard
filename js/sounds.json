@@ -1,0 +1,9 @@
+{
+	"sounds": [
+			{
+					"label": "Bomahaha",
+					"url": "../assets/sounds/bomahaha.mp3",
+					"background": "../assets/images/bg1.jpg"
+			}
+	]
+}
