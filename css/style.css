@@ -14,7 +14,7 @@ body {
   align-items: center;
   min-height: 100vh;
   transition: background-color 0.3s ease, color 0.3s ease;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 h1,
@@ -166,7 +166,7 @@ h6,
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
-  /* overflow: hidden; */
+  overflow-x: hidden;
 }
 
 .background-layer>div {
@@ -239,6 +239,8 @@ h6,
 }
 
 @media (max-width: 768px) {
+
+  
   .header {
     background: rgba(255, 255, 255, 0.7);
   }
@@ -246,10 +248,8 @@ h6,
 
   .soundboard {
     margin: 100px 0 300px 0;
-    padding: 0 0 200px 0;
-    height: 100vh;
+    padding: 0 0 100px 0;
     flex-direction: row;
-
   }
 
   .soundboard__button {
@@ -258,4 +258,6 @@ h6,
     min-width: unset;
     min-height: unset;
   }
+
+  
 }
