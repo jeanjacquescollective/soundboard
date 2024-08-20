@@ -166,7 +166,7 @@ h6,
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .background-layer>div {
@@ -201,20 +201,20 @@ h6,
 
 #bg4 {
   background-image: url('../assets/images/background/rose.png');
-  top: 15%;
+  top: 0%;
   left: 85%;
-  width: 200px;
-  height: 200px;
+  width: 140px;
+  height: 140px;
   background-size: contain;
 
 }
 
 #bg5 {
-  background-image: url('../assets/images/background/flower.webp');
-  top: 75%;
-  left: 5%;
-  width: 200px;
-  height: 200px;
+  background-image: url('../assets/images/background/rose-2.png');
+  top: 95%;
+  left: 0%;
+  width: 100px;
+  height: 100px;
   background-size: contain;
 
 }
