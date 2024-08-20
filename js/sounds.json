@@ -28,7 +28,7 @@
     {
       "label": "A whole bottle of champagne",
       "url": "../assets/sounds/bottle-champagne.mp3",
-      "image": "../assets/images/buttons/bottle-champagne.jpg"
+      "image": "../assets/images/buttons/bottle-champagne.png"
     },
     {
       "label": "Everybody merry",
@@ -60,7 +60,8 @@
 		},
 		{
 			"label": "stemrecht",
-			"url": "../assets/sounds/stemrecht.mp3"
+			"url": "../assets/sounds/stemrecht.mp3",
+      "image": "../assets/images/buttons/stemrecht.png"
 		},
 		{
 			"label": "Poepke chez moi",

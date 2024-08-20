@@ -2,9 +2,8 @@
   font-family: 'Allura';
   src: url('./Allura-Regular.otf') format('opentype');
 }
-html{
-  overflow: hidden;
-}
+
+
 /* Base Styles */
 body {
   font-family: Arial, sans-serif;
@@ -13,16 +12,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 100vh; */
+  min-height: 100vh;
   transition: background-color 0.3s ease, color 0.3s ease;
-  overflow: hidden;
+  overflow: scroll;
 }
 
-h1, h2, h3, h4, h5, h6, .soundboard__button{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.soundboard__button {
   font-family: 'Allura', cursive;
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -30,7 +35,6 @@ h1, h2, h3, h4, h5, h6, .soundboard__button{
 .page {
   background-color: fuchsia;
   color: #333;
-  height: 100vh;
 }
 
 /* BEM Block: Container */
@@ -100,24 +104,22 @@ h1, h2, h3, h4, h5, h6, .soundboard__button{
   border-radius: 50%;
 }
 
-.toggle__input:checked + .toggle__slider {
+.toggle__input:checked+.toggle__slider {
   background-color: #333;
 }
 
-.toggle__input:checked + .toggle__slider:before {
+.toggle__input:checked+.toggle__slider:before {
   transform: translateX(24px);
 }
 
 /* BEM Block: Soundboard */
 .soundboard {
+  margin: 75px;
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  max-height: 100%;
-  overflow: auto; 
-
 }
 
 /* BEM Block: Button (Soundboard buttons) */
@@ -133,8 +135,9 @@ h1, h2, h3, h4, h5, h6, .soundboard__button{
   transition: transform 0.2s;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  min-width: 200px;
-  min-height: 200px;
+  width: 200px;
+  height: 200px;
+  text-wrap: wrap;
   font-size: 2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
@@ -166,7 +169,7 @@ h1, h2, h3, h4, h5, h6, .soundboard__button{
   overflow: hidden;
 }
 
-.background-layer > div {
+.background-layer>div {
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -192,6 +195,28 @@ h1, h2, h3, h4, h5, h6, .soundboard__button{
   left: 85%;
   width: 200px;
   height: 200px;
+  background-size: contain;
+
+}
+
+#bg4 {
+  background-image: url('../assets/images/background/rose.png');
+  top: 15%;
+  left: 85%;
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+
+}
+
+#bg5 {
+  background-image: url('../assets/images/background/flower.webp');
+  top: 75%;
+  left: 5%;
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+
 }
 
 /* Spinning Animation */
@@ -199,6 +224,7 @@ h1, h2, h3, h4, h5, h6, .soundboard__button{
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -206,29 +232,29 @@ h1, h2, h3, h4, h5, h6, .soundboard__button{
 
 /* Apply spinning animation to elements */
 #bg1,
-#bg3 {
+#bg3,
+#bg4,
+#bg5 {
   animation: spin 200s linear infinite;
 }
 
 @media (max-width: 768px) {
-  .header{
+  .header {
     background: rgba(255, 255, 255, 0.7);
   }
-  .page{
-    overflow: auto;
-    /* padding-top: 500px; */
-  }
-  .soundboard{
-    padding: 100px 0 100px 0;
+
+
+  .soundboard {
+    margin: 100px 0 300px 0;
+    padding: 0 0 200px 0;
     height: 100vh;
-    overflow: scroll;
-    gap: 10px;
     flex-direction: row;
 
   }
-  .soundboard__button{
-    width: 150px;
-    height: 150px;
+
+  .soundboard__button {
+    width: calc(40vw);
+    aspect-ratio: 1/1;
     min-width: unset;
     min-height: unset;
   }
