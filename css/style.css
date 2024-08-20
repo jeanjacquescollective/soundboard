@@ -2,7 +2,9 @@
   font-family: 'Allura';
   src: url('./Allura-Regular.otf') format('opentype');
 }
-
+html{
+  overflow: hidden;
+}
 /* Base Styles */
 body {
   font-family: Arial, sans-serif;
@@ -109,7 +111,9 @@ h1, h2, h3, h4, h5, h6, .soundboard__button{
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
+  max-height: 100%;
+  overflow: auto; 
 }
 
 /* BEM Block: Button (Soundboard buttons) */
@@ -199,4 +203,19 @@ h1, h2, h3, h4, h5, h6, .soundboard__button{
 #bg1,
 #bg3 {
   animation: spin 200s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .page{
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .soundboard{
+    padding: 50px 0;
+    overflow: hidden;
+  }
+  .soundboard__button{
+    min-width: 100px;
+    min-height: 100px;
+  }
 }
