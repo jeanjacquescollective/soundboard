@@ -13,7 +13,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
   transition: background-color 0.3s ease, color 0.3s ease;
   overflow: hidden;
 }
@@ -30,6 +30,7 @@ h1, h2, h3, h4, h5, h6, .soundboard__button{
 .page {
   background-color: fuchsia;
   color: #333;
+  height: 100vh;
 }
 
 /* BEM Block: Container */
@@ -43,11 +44,13 @@ h1, h2, h3, h4, h5, h6, .soundboard__button{
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 20px;
+  z-index: 1;
+  width: 100vw;
 }
 
 .header__title {
@@ -114,6 +117,7 @@ h1, h2, h3, h4, h5, h6, .soundboard__button{
   gap: 20px;
   max-height: 100%;
   overflow: auto; 
+
 }
 
 /* BEM Block: Button (Soundboard buttons) */
@@ -159,6 +163,7 @@ h1, h2, h3, h4, h5, h6, .soundboard__button{
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
+  overflow: hidden;
 }
 
 .background-layer > div {
@@ -206,16 +211,25 @@ h1, h2, h3, h4, h5, h6, .soundboard__button{
 }
 
 @media (max-width: 768px) {
+  .header{
+    background: rgba(255, 255, 255, 0.7);
+  }
   .page{
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow: auto;
+    /* padding-top: 500px; */
   }
   .soundboard{
-    padding: 50px 0;
-    overflow: hidden;
+    padding: 100px 0 100px 0;
+    height: 100vh;
+    overflow: scroll;
+    gap: 10px;
+    flex-direction: row;
+
   }
   .soundboard__button{
-    min-width: 100px;
-    min-height: 100px;
+    width: 150px;
+    height: 150px;
+    min-width: unset;
+    min-height: unset;
   }
 }
