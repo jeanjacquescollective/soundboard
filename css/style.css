@@ -137,7 +137,7 @@ h6,
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   width: 200px;
   height: 200px;
-  text-wrap: wrap;
+  overflow-wrap: break-word;
   font-size: 2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
@@ -247,8 +247,7 @@ h6,
 
 
   .soundboard {
-    margin: 100px 0 300px 0;
-    padding: 0 0 100px 0;
+    margin: 100px 0 100px 0;
     flex-direction: row;
   }
 

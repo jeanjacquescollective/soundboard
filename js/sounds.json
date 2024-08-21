@@ -54,7 +54,7 @@
 			"image": "../assets/images/buttons/mijn-gedacht.png"
     },
 		{
-			"label": "Naaispecialist",
+			"label": "Naai<wbr>specialist",
 			"url": "../assets/sounds/naaispecialist.mp3",
 			"image": "../assets/images/buttons/naaispecialist.png"
 		},

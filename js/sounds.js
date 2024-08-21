@@ -19,7 +19,7 @@ fetch('./js/sounds.json')
                 button.style.backgroundImage = `url('./assets/images/buttons/fallback_background.jpg')`;
 
             }
-            button.textContent = sound.label;
+            button.innerHTML = sound.label;
 
             button.addEventListener('click', () => {
               const audio = new Audio(sound.url || 'fallback_sound.mp3');
